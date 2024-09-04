@@ -7,7 +7,36 @@
       $('body').delay(450).css({
         'overflow': 'visible'
       });
+
+      // Load the header content after preloader is done
+      loadHeader();
     });
+
+    // Function to load the header content using jQuery
+    function loadHeader() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'header.html', true);
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+              var headerElement = document.querySelector('header');
+              if (headerElement) {
+                  headerElement.innerHTML = xhr.responseText;
+                  // Initialize slicknav after the header is loaded
+                  var menu = $('ul#navigation');
+                  if(menu.length){
+                      menu.slicknav({
+                          prependTo: ".mobile_menu",
+                          closedSymbol: '+',
+                          openedSymbol:'-'
+                      });
+                  }
+              } else {
+                  console.error('No <header> element found in the document.');
+              }
+          }
+      };
+      xhr.send();
+  }
 
 /* 2. sticky And Scroll UP */
     $(window).on('scroll', function () {
@@ -28,21 +57,6 @@
       return false;
     });
   
-
-/* 3. slick Nav */
-// mobile_menu
-    var menu = $('ul#navigation');
-    if(menu.length){
-      menu.slicknav({
-        prependTo: ".mobile_menu",
-        closedSymbol: '+',
-        openedSymbol:'-'
-      });
-    };
-
-
-
-
 /* 3. MainSlider-1 */
     function mainSlider() {
         var BasicSlider = $('.slider-active');

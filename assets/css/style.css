@@ -3315,7 +3315,7 @@ hero-btn {
 /* line 85, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_headerMenu.scss */
 .main-header .main-menu ul li a {
   color: #0d2d3e;
-  font-weight: 400;
+  font-weight: 1000;
   padding: 39px 19px;
   display: block;
   font-size: 16px;
@@ -3336,7 +3336,7 @@ hero-btn {
 
 /* line 99, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_headerMenu.scss */
 .main-header .main-menu ul li:hover > a {
-  color: #14435c;
+  color: #1a79ac;
 }
 
 /* line 104, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_headerMenu.scss */
