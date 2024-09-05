@@ -128,7 +128,7 @@
       infinite: true,
       autoplay: true,
       speed: 400,
-      arrows: true,
+      // arrows: true,
       slidesToShow: 5,
       slidesToScroll: 1,
       // prevArrow: '<i class="ti-arrow-left"></i>',
