@@ -3905,7 +3905,7 @@ hero-btn {
 /* line 3, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_categories.scss */
 .categories-area .single-cat {
   border: 9px solid transparent;
-  padding: 30px 22px;
+  padding: 5px 5px;
   -webkit-transition: all 0.4s ease-out 0s;
   -moz-transition: all 0.4s ease-out 0s;
   -ms-transition: all 0.4s ease-out 0s;
@@ -3945,7 +3945,7 @@ hero-btn {
   bottom: 0;
   left: 0;
   z-index: -1;
-  border: 9px solid #fff;
+  border: 3px solid #fff;
 }
 
 /* line 29, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_categories.scss */
@@ -4160,7 +4160,7 @@ hero-btn {
 
 /* line 40, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_count_down.scss */
 .count-down-area .single-counter p {
-  font-size: 18px;
+  font-size: 14px;
   color: #737980;
   line-height: 1;
   margin: 0;
@@ -4232,8 +4232,8 @@ hero-btn {
   font-family: "Roboto", sans-serif;
   position: relative;
   color: #e94d65;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 18px;
   display: block;
   padding-left: 60px;
 }
@@ -4262,7 +4262,7 @@ hero-btn {
 .services-area .single-services .services-caption p a {
   color: #0e132a;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   display: block;
 }
 
@@ -4412,7 +4412,7 @@ hero-btn {
 
 /* line 51, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_team.scss */
 .brand-area .single-brand.slick-slide {
-  opacity: .7;
+  opacity: 0.9;
 }
 
 /* line 59, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_team.scss */
