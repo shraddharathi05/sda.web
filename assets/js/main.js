@@ -128,9 +128,11 @@
       infinite: true,
       autoplay: true,
       speed: 400,
-      arrows: false,
+      arrows: true,
       slidesToShow: 5,
       slidesToScroll: 1,
+      // prevArrow: '<i class="ti-arrow-left"></i>',
+      // nextArrow: '<i class="ti-arrow-right"></i>',
       responsive: [
         {
           breakpoint: 1200,
@@ -139,6 +141,7 @@
             slidesToScroll: 3,
             infinite: true,
             dots: false,
+            arrows: true,
           }
         },
         {
@@ -148,6 +151,7 @@
             slidesToScroll: 3,
             infinite: true,
             dots: false,
+            arrows: true,
           }
         },
         {
@@ -157,20 +161,23 @@
             slidesToScroll: 1,
             infinite: true,
             dots: false,
+            arrows: true,
           }
         },
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: false,
           }
         },
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
           }
         },
 
