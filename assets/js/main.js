@@ -10,6 +10,7 @@
 
       // Load the header content after preloader is done
       loadHeader();
+      loadFooter();
     });
 
     // Function to load the header content using jQuery
@@ -36,6 +37,24 @@
           }
       };
       xhr.send();
+    }
+
+    // Function to load the footer content using jQuery
+    function loadFooter() {
+      var footerXhr = new XMLHttpRequest();
+      footerXhr.open('GET', 'footer.html', true);
+      footerXhr.onreadystatechange = function () {
+        if (footerXhr.readyState === 4 && footerXhr.status === 200) {
+          console.log("YOOO")
+          var footerElement = document.querySelector('footer');
+          if (footerElement) {
+            footerElement.innerHTML = footerXhr.responseText;
+          } else {
+            console.error('No <footer> element found in the document.');
+          }
+        }
+      };
+      footerXhr.send();
   }
 
 /* 2. sticky And Scroll UP */
@@ -128,7 +147,7 @@
       infinite: true,
       autoplay: true,
       speed: 400,
-      // arrows: true,
+      arrows: false,
       slidesToShow: 5,
       slidesToScroll: 1,
       // prevArrow: '<i class="ti-arrow-left"></i>',
@@ -141,7 +160,7 @@
             slidesToScroll: 3,
             infinite: true,
             dots: false,
-            arrows: true,
+            arrows: false,
           }
         },
         {
@@ -151,7 +170,7 @@
             slidesToScroll: 3,
             infinite: true,
             dots: false,
-            arrows: true,
+            arrows: false,
           }
         },
         {
@@ -161,7 +180,7 @@
             slidesToScroll: 1,
             infinite: true,
             dots: false,
-            arrows: true,
+            arrows: false,
           }
         },
         {
@@ -169,6 +188,8 @@
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            infinite: true,
+            dots: false,
             arrows: false,
           }
         },
@@ -177,6 +198,8 @@
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            infinite: true,
+            dots: false,
             arrows: false,
           }
         },

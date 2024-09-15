@@ -4700,6 +4700,10 @@ hero-btn {
   color: #bdbdbd;
 }
 
+.footer-area .footer-top .single-footer-caption a:hover {
+  color: red;
+}
+
 /* line 43, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_footer.scss */
 .footer-area .footer-top .single-footer-caption .footer-tittle h4 {
   color: #fff;
